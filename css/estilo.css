@@ -21,6 +21,42 @@ h1,h2,h3,h4,h5,h6{
     box-sizing: border-box;
 }
 
+#search-result{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+    
+    #search-result header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 48px;
+    
+    }
+    
+    #search-result header a{
+
+
+        color: var(--title-color);
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    
+    }
+    
+    #search-result header a span{
+    
+        background-image: url('../icones/arrow-left.svg');
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+    
+    }
+
 
 
 
