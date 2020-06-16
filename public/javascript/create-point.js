@@ -32,7 +32,7 @@ function getCities(event){
      .then( cities =>{
  
          for(const city of cities){
-             citySelect.innerHTML +=`<option value="${city.id}">${city.nome}</option>`
+             citySelect.innerHTML +=`<option value="${city.nome}">${city.nome}</option>`
          } 
          citySelect.disabled = false
      })
@@ -40,8 +40,6 @@ function getCities(event){
 
 document.querySelector("select[name=uf]")
 .addEventListener("change",getCities)
-
-
 
 
 //itens coleta
@@ -64,12 +62,13 @@ let selectedItems = []
 
         const itemId =itemLi.dataset.id
 
+        console.log('ITEM ID:', itemId)
+
         //verificar se exitem itens seecionados, se sim pegar os itens selecionacionados
 
         const alreadySelected = selectedItems.findIndex(item =>{
             const itemFound = item == itemId //retorna true or false
             return itemFound
-
         
         })
 
@@ -85,8 +84,7 @@ let selectedItems = []
         }
         console.log(selectedItems)
         //se nao estiver selecionado adicionar a seleção
-
-
+        console.log('selectedItems:  ', selectedItems)
         //atualizar o campo escondido com os itens slecionados
         colllectedItems.value =selectedItems
     }

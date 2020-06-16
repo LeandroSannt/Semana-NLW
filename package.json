@@ -1,0 +1,27 @@
+{
+  "name": "Semana-NLW",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeandroSannt/Semana-NLW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeandroSannt/Semana-NLW/issues"
+  },
+  "homepage": "https://github.com/LeandroSannt/Semana-NLW#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "node-pre-gyp": "^0.15.0",
+    "nunjucks": "^3.2.1",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
