@@ -81,11 +81,11 @@ db.serialize(() =>{
     })*/
 
     //deletar dados
-   /* db.run (`DELETE FROM places WHERE id =?`, [16],function(err){
+    db.run (`DELETE FROM places WHERE id =?`, [19],function(err){
         if(err){
             console.log("err")
         }
         console.log("registro apagado com sucesso")
-    })*/
+    })
 
 })
